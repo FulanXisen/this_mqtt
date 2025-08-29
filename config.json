@@ -1,0 +1,19 @@
+{
+  "interval": 5,
+  "broker": "127.0.0.1",
+  "port": 1883,
+  "topics": {
+    "DoraGAutomation/DataWriteBack/OTA": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_DataWriteBack_OTA.py" 
+    },
+    "DoraGAutomation/DataWriteBack/MTBF": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_DataWriteBack_MTBF.py"
+    },
+    "DoraGAutomation/DataWriteBack/Wakeup": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_DataWriteBack_Wakeup.py"
+    }
+  }
+}
