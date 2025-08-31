@@ -3,17 +3,57 @@
   "broker": "127.0.0.1",
   "port": 1883,
   "topics": {
-    "DoraGAutomation/DataWriteBack/OTA": {
-      "qos": 2,
-      "callback_path": "callback/DoraGAutomation_DataWriteBack_OTA.py" 
+    "testing": {
+        "qos": 2,
+        "callback_path": "callback/testing.py"
     },
-    "DoraGAutomation/DataWriteBack/MTBF": {
+    "DoraGAutomation/Database/LarkSheets/ProcessOTA": {
       "qos": 2,
-      "callback_path": "callback/DoraGAutomation_DataWriteBack_MTBF.py"
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessOTA.py" 
     },
-    "DoraGAutomation/DataWriteBack/Wakeup": {
+    "DoraGAutomation/Database/LarkSheets/SummaryOTA": {
       "qos": 2,
-      "callback_path": "callback/DoraGAutomation_DataWriteBack_Wakeup.py"
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryOTA.py" 
+    },
+    "DoraGAutomation/Database/LarkSheets/ProcessMTBF": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessMTBF.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/SummaryMTBF": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryMTBF.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/ProcessWakeup": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessWakeup.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/SummaryWakeup": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryWakeup.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/ProcessDualOSComm": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessDualOSComm.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/SummaryDualOSComm": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryDualOSComm.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/ProcessReconnect": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessReconnect.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/SummaryReconnect": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryReconnect.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/ProcessBootShutdown": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_ProcessBootShutdown.py"
+    },
+    "DoraGAutomation/Database/LarkSheets/SummaryBootShutdown": {
+      "qos": 2,
+      "callback_path": "callback/DoraGAutomation_Database_LarkSheets_SummaryBootShutdown.py"
     }
   }
 }
